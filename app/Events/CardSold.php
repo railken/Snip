@@ -45,6 +45,9 @@ class CardSold implements ShouldBroadcast
             case "chemistry":
                 $name = $this->transaction->player->chemistry_rel->playStyle_name;
                 break;
+            case "fitness":
+                $name = $this->transaction->player->fitness_rel->fitness_name;
+                break;
         }
         return [
             'player_name' => $name,

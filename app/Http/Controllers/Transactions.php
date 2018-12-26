@@ -35,6 +35,9 @@ class Transactions extends CrudController
                         case 'chemistry':
                             return $entry->player->chemistry_rel->playStyle_name;
                             break;
+						case 'fitness':
+							return $entry->player->fitness_rel->fitness_name;
+							break;
                     }
                 }
             ],

@@ -22,12 +22,14 @@ class Dashboard extends Controller
         $players = Players::query()->where('xb_buy_bin', '!=', '0')->where('status', '1')->where('card_type', 'player');
         $positions = Players::query()->where('xb_buy_bin', '!=', '0')->where('status', '1')->where('card_type', 'position');
         $chemistry = Players::query()->where('xb_buy_bin', '!=', '0')->where('status', '1')->where('card_type', 'chemistry');
+		$fitness   = Players::query()->where('xb_buy_bin', '!=', '0')->where('status', '1')->where('card_type', 'fitness');
         $accounts = Accounts::query()->where('status', '1');
         $coins = Accounts::query();
         return view('dashboard', [
             'positions' => $positions,
             'players' => $players,
             'chemistry' => $chemistry,
+			'fitness' => $fitness
             'accounts' => $accounts,
             'coins' => $coins
         ]);

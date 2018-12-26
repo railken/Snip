@@ -64,3 +64,4 @@ class AddChemistryStyles extends Migration
         Schema::drop('chemistry_styles');
     }
 }
+?>

@@ -33,6 +33,7 @@ Route::group([
     CRUD::resource('transactions', 'Transactions');
     CRUD::resource('positions', 'Positions');
     CRUD::resource('chemistry', 'Chemistry');
+	CRUD::resource('fitness', 'Fitness');
     CRUD::resource('players', 'Players')->with(function(){
         Route::get('players/find', 'Players@find');
     });
