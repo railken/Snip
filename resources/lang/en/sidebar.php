@@ -12,6 +12,7 @@ return [
     'players' => 'Players',
     'positions' => 'Positions',
     'chemistry' => 'Chemistry Styles',
+	'fitness' => 'Fitness',
     'transactions' => 'Transactions',
     'accounts' => 'Accounts',
     'settings' => 'Settings'

@@ -29,7 +29,7 @@ class Dashboard extends Controller
             'positions' => $positions,
             'players' => $players,
             'chemistry' => $chemistry,
-			'fitness' => $fitness
+			'fitness' => $fitness,
             'accounts' => $accounts,
             'coins' => $coins
         ]);

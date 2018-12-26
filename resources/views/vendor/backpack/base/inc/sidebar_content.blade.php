@@ -6,6 +6,7 @@
 <li><a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/players') }}"><i class="fa fa-users"></i> <span>{{ trans('sidebar.players') }}</span></a></li>
 <li><a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/positions') }}"><i class="fa fa-exchange"></i> <span>{{ trans('sidebar.positions') }}</span></a></li>
 <li><a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/chemistry') }}"><i class="fa fa-cubes"></i> <span>{{ trans('sidebar.chemistry') }}</span></a></li>
+<li><a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/fitness') }}"><i class="fa fa-cubes"></i> <span>{{ trans('sidebar.fitness') }}</span></a></li>
 <li><a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/transactions') }}"><i class="fa fa-history"></i> <span>{{ trans('sidebar.transactions') }}</span></a></li>
 <li><a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/accounts') }}"><i class="fa fa-address-book-o"></i> <span>{{ trans('sidebar.accounts') }}</span></a></li>
 <li><a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/setting') }}"><i class="fa fa-cog"></i> <span>{{ trans('sidebar.settings') }}</span></a></li>
