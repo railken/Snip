@@ -7,7 +7,10 @@ use Illuminate\Support\Facades\DB;
 class AddSquadFitness extends Migration
 {
     protected $fitness_squad = [
-        5002006 => "Gold Fitness Squad"
+	
+		300 => "Bronze-Squad"
+		301 => "Silver-Squad"
+        302 => "Gold-Squad"
         
     ];
     
@@ -38,6 +41,6 @@ class AddSquadFitness extends Migration
      */
     public function down()
     {
-        Schema::drop('chemistry_styles');
+        Schema::drop('fitness_squad');
     }
 }
