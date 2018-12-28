@@ -320,7 +320,7 @@ class RunBuy extends Command {
                                         break;
 									case "fitness":
 										$search = $this->fut->searchAuctions(
-											'fitness',
+											'training',
 											null,
 											'fitness',
 											null,
@@ -338,7 +338,7 @@ class RunBuy extends Command {
                                             $player->fitness_rel->fitness_id,
                                             0,
                                             21
-										)
+										);
 										 $search['auctionInfo'] = collect($search['auctionInfo'])->sortBy('buyNowPrice')->values()->toArray();
                                         break;
 											
