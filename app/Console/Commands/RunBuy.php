@@ -219,6 +219,10 @@ class RunBuy extends Command {
                     case "chemistry":
                         $name = $player->chemistry_rel->playStyle_name;
                         break;
+					case "fitness":
+						$name = $player->fitness_rel->fitness_name;
+                        break;
+					
                 }
                 Log::info('We are going to search for '.$name.' with a max BIN of '.$buy_bin);
                 $cards_selling = Transactions::query()->where('player_id', $player->id)->where('account_id', $this->account->id)->whereNull('sell_bin')->get();
@@ -314,6 +318,30 @@ class RunBuy extends Command {
                                         );
                                         $search['auctionInfo'] = collect($search['auctionInfo'])->sortBy('buyNowPrice')->values()->toArray();
                                         break;
+									case "fitness":
+										$search = $this->fut->searchAuctions(
+											'fitness',
+											null,
+											'fitness',
+											null,
+                                            null,
+                                            null,
+                                            $formattedBid,
+                                            null,
+                                            $buy_bin,
+                                            null,
+                                            null,
+                                            null,
+                                            null,
+                                            null,
+                                            null,
+                                            $player->fitness_rel->fitness_id,
+                                            0,
+                                            21
+										)
+										 $search['auctionInfo'] = collect($search['auctionInfo'])->sortBy('buyNowPrice')->values()->toArray();
+                                        break;
+											
                                 }
 
                                 if(!empty($search['auctionInfo'])) {
