@@ -77,6 +77,11 @@ class Players extends Model
     {
         return $this->hasOne(Position::class, 'id', 'card_id');
     }
+	
+	public function fitness_rel()
+	{
+		return $this->hasOne(Fitness::class,'id', 'card_id');
+	}
 
     public function getName()
     {
