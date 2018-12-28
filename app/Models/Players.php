@@ -90,6 +90,8 @@ class Players extends Model
             case "chemistry":
                 return $this->chemistry_rel->playStyle_name;
                 break;
+			case "fitness":
+				return $this->fitness_rel->fitness_name;
         }
         return null;
     }
