@@ -8,8 +8,8 @@ class AddSquadFitness extends Migration
 {
     protected $fitness_squad = [
 	
-		300 => "Bronze-Squad"
-		301 => "Silver-Squad"
+		300 => "Bronze-Squad",
+		301 => "Silver-Squad",
         302 => "Gold-Squad"
         
     ];
@@ -44,3 +44,4 @@ class AddSquadFitness extends Migration
         Schema::drop('fitness_squad');
     }
 }
+?>
